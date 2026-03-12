@@ -1,0 +1,63 @@
+* {
+    bg: #242526CC; 
+    fg: #f1e9d2;
+    accent: #99bc80; 
+    urgent: #e75a7c;
+    
+    background-color: transparent;
+    text-color: @fg;
+    
+    margin: 0;
+    padding: 0;
+    spacing: 0;
+}
+
+window {
+    width: 45%;
+    background-color: @bg;
+    border: 2px;
+    border-color: @accent; 
+    padding: 10px;
+    transparency: "real";
+}
+
+inputbar {
+    spacing: 8px; 
+    padding: 8px;
+    children: [ prompt, entry ];
+}
+
+prompt {
+    text-color: @accent;
+    font-weight: bold;
+}
+
+entry {
+    placeholder: "Search...";
+    placeholder-color: #575855;
+}
+
+listview {
+    lines: 10;
+    columns: 1;
+    scrollbar: false;
+    padding: 8px 0px 0px 0px;
+}
+
+element {
+    padding: 4px 8px; 
+    margin: 2px 0;
+}
+
+element normal.normal {
+    text-color: @fg;
+}
+
+element selected.normal {
+    background-color: @accent;
+    text-color: #242526;
+}
+
+element alternate.normal {
+    text-color: @fg;
+}

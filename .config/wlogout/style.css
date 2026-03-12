@@ -1,0 +1,61 @@
+/* Everforest Palette */
+@define-color bg0         #2d353b;
+@define-color bg1         #343f44;
+@define-color fg          #d3c6aa;
+@define-color aqua        #83c092;
+
+* {
+  background-image: none;
+  box-shadow: none;
+}
+
+window {
+  background-color: rgba(35, 42, 46, 0.7);
+}
+
+button {
+  color: @fg;
+  background-color: @bg0;
+  outline-style: none;
+  border: 2px solid @bg1;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  /* REMOVE SIDE MARGINS to stick buttons together */
+  margin: 30px 0px;
+
+  /* MASSIVE ICONS */
+  background-size: 80px;
+
+  /* Smooth growth for both icon and button height */
+  transition: all 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: @bg1;
+  border-color: @aqua;
+
+  /* VERTICAL GROWTH: Reducing margins makes the button taller */
+  margin: 0px 0px;
+
+  /* EVEN BIGGER ICONS */
+  background-size: 120px;
+}
+
+/* Local Icon Paths */
+#lock {
+  background-image: image(url("/home/myk/.config/wlogout/icons/lock.png"));
+  border-radius: 15px 0px 0px 15px; /* Rounded only on the far left */
+}
+#logout {
+  background-image: image(url("/home/myk/.config/wlogout/icons/logout.png"));
+  border-radius: 0px;
+}
+#reboot {
+  background-image: image(url("/home/myk/.config/wlogout/icons/reboot.png"));
+  border-radius: 0px;
+}
+#shutdown {
+  background-image: image(url("/home/myk/.config/wlogout/icons/shutdown.png"));
+  border-radius: 0px 15px 15px 0px; /* Rounded only on the far right */
+}

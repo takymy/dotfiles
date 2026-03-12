@@ -1,0 +1,55 @@
+/* Darken the background to make the buttons pop */
+window {
+  background-color: rgba(30, 30, 46, 0.5);
+}
+
+button {
+  background-color: #313244; /* Surface0 */
+  color: #cdd6f4; /* Text */
+  border: 2px solid #1e1e2e;
+  border-radius: 20px;
+  margin: 15px;
+
+  /* Fixed Icon Sizing */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 7%; /* Use a fixed pixel size instead of % */
+
+  /* Ensure the text is pushed to the bottom */
+  background-origin: content-box;
+  padding: 40px;
+
+  transition: all 0.2s ease-in-out;
+}
+
+/* More specific hover selector */
+button:hover {
+  background-color: #cba6f7; /* Mauve */
+  border-color: #f5e0dc; /* Rosewater */
+  color: #11111b; /* Crust (dark text for readability) */
+}
+
+/* If you want the icon to change color or grow on hover */
+button:hover {
+  background-size: 90px;
+}
+
+/* Icon Paths */
+#lock {
+  background-image: image(url("/usr/share/wlogout/icons/lock.png"));
+}
+#logout {
+  background-image: image(url("/usr/share/wlogout/icons/logout.png"));
+}
+#suspend {
+  background-image: image(url("/usr/share/wlogout/icons/suspend.png"));
+}
+#hibernate {
+  background-image: image(url("/usr/share/wlogout/icons/hibernate.png"));
+}
+#shutdown {
+  background-image: image(url("/usr/share/wlogout/icons/shutdown.png"));
+}
+#reboot {
+  background-image: image(url("/usr/share/wlogout/icons/reboot.png"));
+}
