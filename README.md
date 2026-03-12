@@ -13,7 +13,7 @@
 
 ### Development Environment
 <p align="center">
-  <img src=".dotfiles-assets/lazyvim.png" width="48%" alt="LazyVim Setup" />
+  <img src=".dotfiles-assets/ghostty.png" width="48%" alt="LazyVim Setup" />
 </p>
 
 ### Menus & Overlay
