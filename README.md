@@ -12,10 +12,8 @@
 ![Desktop Showcase](.dotfiles-assets/desktop.png)
 
 ### Development Environment
-<p align="center">
-  <img src=".dotfiles-assets/ghostty.png" width="48%" alt="Ghostty Terminal" />
-  <img src=".dotfiles-assets/lazyvim.png" width="48%" alt="LazyVim Setup" />
-</p>
+
+![Lazyvim Setup](.dotfiles-assets/ghostty.png)
 
 ### Menus & Overlay
 <p align="center">
