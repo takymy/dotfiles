@@ -7,36 +7,36 @@
 @define-color grey #575855;
 
 * {
-    border: none;
-    border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
-    min-height: 0;
+  border: none;
+  border-radius: 0;
+  font-family: "JetBrainsMono Nerd Font", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  min-height: 0;
 }
 
 window#waybar {
-    background-color: rgba(36, 37, 38, 0.9); /* Dark Bamboo with slight transparency */
-    color: @fg;
-    transition-property: background-color;
-    transition-duration: .5s;
+  background-color: rgba(36, 37, 38, 0.9);
+  color: @fg;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 #workspaces button {
-    padding: 10px 5px;
-    background-color: transparent;
-    color: @fg;
+  padding: 10px 5px;
+  background-color: transparent;
+  color: @fg;
 }
 
 /* Green Focused Workspace */
 #workspaces button.focused {
-    background-color: @green;
-    color: @bg;
+  background-color: @green;
+  color: @bg;
 }
 
 #workspaces button:hover {
-    background-color: @grey;
-    box-shadow: inherit;
-    text-shadow: inherit;
+  background-color: @grey;
+  box-shadow: inherit;
+  text-shadow: inherit;
 }
 
 #clock,
@@ -53,25 +53,25 @@ window#waybar {
 #mode,
 #idle_inhibitor,
 #mpd {
-    padding: 0 10px;
-    color: @fg;
-    margin: 4px 2px;
+  padding: 0 10px;
+  color: @fg;
+  margin: 4px 2px;
 }
 
-/* Module Accents */
-#battery.charging, #battery.plugged {
-    color: @green;
+#battery.charging,
+#battery.plugged {
+  color: @green;
 }
 
 #battery.critical:not(.charging) {
-    background-color: @red;
-    color: @fg;
+  background-color: @red;
+  color: @fg;
 }
 
 #pulseaudio {
-    color: @green;
+  color: @green;
 }
 
 #network {
-    color: @yellow;
+  color: @yellow;
 }
